@@ -1,12 +1,19 @@
+* {
+  margin: 0px;
+}
+
 :root {
   --black: #080808;
   --white: #fefefe;
   --gray: #565656;
-  --transparentblue: rgba(9, 14, 56, 0.548);
-  --lightblue: rgb(57, 212, 240);
+  --transparentblue: #090e388c;
+  --lightblue: #39d4f0;
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --teal: #006060;
   --violetred: #a2106d;
   --orange: #ffa500;
+  --text: #81afdd;
+  --subtext: #ff8a71;
 }
 
 body {
@@ -16,10 +23,19 @@ body {
   margin: 0px;
 }
 
+.gradient-bg {
+  background: url("./assets/portal.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .navbar-container {
   background-color: var(--transparentblue);
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-items {
@@ -40,7 +56,7 @@ body {
 .navbar-items > div > img {
   width: 64px;
   height: 64px;
-  margin: 0 2rem;
+  margin: 0rem 2rem;
 }
 
 .navbar-items > li:hover {
@@ -56,4 +72,21 @@ body {
   display: block;
   text-decoration: none;
   color: var(--white);
+}
+
+.wai_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("images/portal.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.wai_text {
+  margin-left: 2rem;
+  margin-bottom: 20rem;
+  max-width: 700px;
+  color: var(--subtext);
 }
