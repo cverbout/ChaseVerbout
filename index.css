@@ -74,7 +74,7 @@ body {
   color: var(--white);
 }
 
-.wai_container {
+.home_container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -84,9 +84,20 @@ body {
   height: 100vh;
 }
 
-.wai_text {
+.home_text {
   margin-left: 2rem;
   margin-bottom: 20rem;
   max-width: 700px;
   color: var(--subtext);
+}
+
+.wai_section {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("images/topMtStHelens-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
 }
