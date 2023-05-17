@@ -14,9 +14,9 @@
         <ul class="navbar-items">
           <div><img src="images/logoA.png" alt="Chase Verbout's Logo" /></div>
           <li><a href="#home">Home</a></li>
-          <li><a href="">Who is Chase V</a></li>
-          <li><a href="">Qualifications</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="#wai">Who is Chase V</a></li>
+          <li><a href="#qual">Qualifications</a></li>
+          <li><a href="#proj">Projects</a></li>
           <li><a href="">Contact Me</a></li>
           <li><a href="">More About Me</a></li>
         </ul>
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div class="wai_section">
+      <section class="wai_section" id="wai">
         <div class="wai_container">
           <h2 className="gradient__text2">Who is Chase V?</h2>
           <p>
@@ -56,52 +56,116 @@
         </div>
         <img
           src="images/chase_cat.png"
-          alt="Chase Verbout holding a board with his name on it"
+          alt="Chase Verbout holding a marker board with his name on it"
         />
-      </div>
+      </section>
 
-      <div class="qual-section">
+      <section class="qual-section" id="qual">
         <h2>Qualifications</h2>
-        <h3>Experience</h3>
-        <h4>
-          In-Space Robotics Modeling and Simulation Internship | NASA | Hampton,
-          VA | June 2023 - August 2023
-        </h4>
+        <section class="qual-exp-section">
+          <h3>Experience</h3>
+          <h4>
+            In-Space Robotics Modeling and Simulation Internship | NASA |
+            Hampton, VA | June 2023 - August 2023
+          </h4>
+          <p></p>
+          <h4>
+            Technical Course Support Specialist | PSU Comp Sci Dept | Portland,
+            OR | September 2022 - Present
+          </h4>
+          <p></p>
+          <h4>
+            Open Source Project Management Intern | King County Metro | Seattle,
+            WA | May 2021 - September 2021
+          </h4>
+          <p>
+            This internship was an extension of my work at UW for CSE 495. Led
+            by Anat Caspi, the Director of the UW Taskar Center for Accessible
+            Technology (TCAT), I performed tertiary work that assisted with
+            their OpenSideWalks (OSW) program. Through this, I was introduced to
+            King County Metro (KCM) and their CommonPaths program that operates
+            with the same data and structures as OSW.
+          </p>
+        </section>
+        <section class="qual-edu-section">
+          <h3>Education</h3>
+          <h4>
+            Portland State University | Portland, OR | Jan. 2023 - Present |
+            GPA: 4.0
+          </h4>
+          <p>M.S. Computer Science</p>
+          <h4>
+            Portland State University | Portland, OR | Sept. 2021 - Dec. 2022 |
+            GPA: 4.0
+          </h4>
+          <p>Postbaccalaureate Computer Science Graduate Preparation</p>
+          <h4>
+            University of Washington | Seattle, WA | Sept. 2017 - June 2021 |
+            GPA: 3.54
+          </h4>
+          <p>B.A. in Geography: Data Science</p>
+        </section>
+        <div class="qual-res">
+          <div><a href="images/resume.pdf" target="_blank">Resume</a></div>
+        </div>
+      </section>
+
+      <section class="proj-section" id="proj">
+        <h2>Projects</h2>
+        <h3>Python Restful API</h3>
         <p></p>
-        <h4>
-          Technical Course Support Specialist | PSU Comp Sci Dept | Portland, OR
-          | September 2022 - Present
-        </h4>
+        <a href="https://github.com/cverbout/Python-RESTful-API" target="_blank"
+          >Github</a
+        >
+        <h3>CheckTheFridge</h3>
         <p></p>
-        <h4>
-          Open Source Project Management Intern | King County Metro | Seattle,
-          WA | May 2021 - September 2021
-        </h4>
+        <a href="https://github.com/Jarwhal3/Check-the-Fridge" target="_blank"
+          >Github</a
+        >
+        <h3>Road Warrior</h3>
         <p>
-          This internship was an extension of my work at UW for CSE 495. Led by
-          Anat Caspi, the Director of the UW Taskar Center for Accessible
-          Technology (TCAT), I performed tertiary work that assisted with their
-          OpenSideWalks (OSW) program. Through this, I was introduced to King
-          County Metro (KCM) and their CommonPaths program that operates with
-          the same data and structures as OSW.
+          My first attempt at creating a playable game with a loose plot and
+          clear objective. RoadHero is a 2d side scroller that shovels a slew of
+          enemies with varying design, speed, and health each round. You, along
+          with your trusty Droggo, must relentlesssly fling fireballs to hold
+          back the onslaught for 14 rounds before facing the horde leader on
+          round 15. I designed the characters myself and made use of the Unity
+          Asset Store for other features.
         </p>
-        <h3>Education</h3>
-        <h4>
-          Portland State University | Portland, OR | Jan. 2023 - Present | GPA:
-          4.0
-        </h4>
-        <p>M.S. Computer Science</p>
-        <h4>
-          Portland State University | Portland, OR | Sept. 2021 - Dec. 2022 |
-          GPA: 4.0
-        </h4>
-        <p>Postbaccalaureate Computer Science Graduate Preparation</p>
-        <h4>
-          University of Washington | Seattle, WA | Sept. 2017 - June 2021 | GPA:
-          3.54
-        </h4>
-        <p>B.A. in Geography: Data Science</p>
-      </div>
+        <a
+          href="https://play.unity.com/mg/other/webgl-builds-248593"
+          target="_blank"
+          >Unity</a
+        >
+        <h3>CommonPaths</h3>
+        <p></p>
+        <a href="https://commonpaths.godaddysites.com/" target="_blank"
+          >Webpage</a
+        >
+      </section>
+
+      <section class="contact-section">
+        <form class="signup-form">
+          <h2>Contact Me</h2>
+          <p class="subhead">Fill up the items in the form below.</p>
+          <div class="form-group">
+            <label class="box-label" for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" />
+          </div>
+          <div class="form-group">
+            <label class="box-label" for="email"> Email: </label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label class="box-label" for="message"> Message: </label>
+            <input type="message" id="message" name="message" />
+          </div>
+          <div class="form-btns">
+            <input class="btn primary-btn" type="submit" value="Submit" />
+            <input class="btn secondary-btn" type="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
