@@ -154,6 +154,7 @@ h4 {
 .qual-section {
   background-color: #53baff;
 }
+
 .qual-section > h2 {
   margin: 0 8rem;
   padding: 8rem 0 2rem 0;
@@ -220,6 +221,48 @@ h4 {
 
 .proj-section {
   background-color: #53baffbd;
+  padding-bottom: 2rem;
+}
+
+.proj-section > h2 {
+  margin: 0 8rem;
+  padding: 8rem 0 2rem 0;
+}
+
+.proj-section > *,
+.proj-section > * {
+  margin: 0 16rem;
+}
+.proj-header > h3,
+.proj-header > h3 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.proj-section > p,
+.proj-section > p {
+  padding-bottom: 1rem;
+}
+
+.proj-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proj-header > a {
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  border: 0.1em solid black;
+  border-radius: 0.15em;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.proj-header > a:hover {
+  background-color: white;
 }
 
 /* Contact Me Style */
