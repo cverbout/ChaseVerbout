@@ -1,3 +1,5 @@
+/* Base Style */
+
 * {
   margin: 0px;
 }
@@ -40,18 +42,13 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h4 {
   font-size: 1.5rem;
 }
 
-.gradient-bg {
-  background: url("./assets/portal.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
+/* Navbar Style */
 
 .navbar-container {
   background-color: var(--transparentblue);
@@ -97,6 +94,8 @@ h4 {
   color: var(--white);
 }
 
+/* Landing Page Style */
+
 .home_container {
   display: flex;
   justify-content: flex-start;
@@ -116,6 +115,7 @@ h4 {
 .home_text > * {
   width: fit-content;
 }
+
 .home_text > h1 {
   margin-bottom: 1rem;
   background: var(--gradient-text);
@@ -123,6 +123,7 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .home_text > h2 {
   margin-bottom: 2rem;
   background: var(--gradient-text);
@@ -130,9 +131,13 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .home_text > p {
   color: var(--white);
 }
+
+/* Who Am I Style */
+
 .wai_section {
   display: flex;
   justify-content: space-around;
@@ -144,13 +149,80 @@ h4 {
   justify-content: center;
 }
 
+/* Qualifications Style */
+
 .qual-section {
   background-color: #53baff;
 }
+.qual-section > h2 {
+  margin: 0 8rem;
+  padding: 8rem 0 2rem 0;
+}
+
+.qual-edu-section > *,
+.qual-exp-section > * {
+  margin: 0 16rem;
+}
+.qual-edu-section > h3,
+.qual-exp-section > h3 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.qual-edu-section > p,
+.qual-exp-section > p {
+  padding-bottom: 1rem;
+}
+
+.qual-edu-psu {
+  background: #154734;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.qual-edu-psu > p,
+.qual-edu-psu > h4,
+.qual-edu-uw > p,
+.qual-edu-uw > h4 {
+  color: white;
+}
+
+.qual-edu-uw {
+  background: linear-gradient(90deg, #4b2e83, #85754d, #b7a57a);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.qual-res {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qual-res-btn > a {
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  border: 0.1em solid black;
+  border-radius: 0.15em;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.qual-res-btn > a:hover {
+  background-color: white;
+}
+
+/* Projects Style */
 
 .proj-section {
   background-color: #53baffbd;
 }
+
+/* Contact Me Style */
 
 .contact-section {
   background-color: #53baff79;
