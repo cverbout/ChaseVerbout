@@ -48,6 +48,10 @@ h4 {
   font-size: 1.5rem;
 }
 
+form {
+  width: 800px;
+}
+
 /* Navbar Style */
 
 .navbar-container {
@@ -152,7 +156,8 @@ h4 {
 /* Qualifications Style */
 
 .qual-section {
-  background-color: #53baff;
+  /*background-color: #53baff;*/
+  background: linear-gradient(180deg, #53baff, #53baffbd);
 }
 
 .qual-section > h2 {
@@ -221,6 +226,7 @@ h4 {
 
 .proj-section {
   background-color: #53baffbd;
+  background: linear-gradient(180deg, #53baffbd, #53baff79);
   padding-bottom: 2rem;
 }
 
@@ -269,4 +275,130 @@ h4 {
 
 .contact-section {
   background-color: #53baff79;
+  background: linear-gradient(180deg, #53baff79, white);
+}
+
+.contact-section > h2 {
+  margin: 0 8rem;
+  padding: 8rem 0 2rem 0;
+}
+
+.signup-form {
+  border-top: 1px solid var(--gray);
+  border-right: 2px solid var(--gray);
+  border-left: 2px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 25px 10px;
+}
+
+.signup-form h2,
+.signup-form p {
+  margin: 0;
+}
+
+.signup-form h2 {
+  padding-top: 10px;
+}
+
+.subhead {
+  color: var(--gray);
+  padding-bottom: 5px;
+}
+
+.form-group input {
+  margin: 10px;
+}
+
+.form-group input {
+  width: 220px;
+  border: 1px solid var(--gray);
+  padding: 2px;
+}
+
+.box-label,
+.radio-label-text {
+  color: var(--black);
+  font-weight: bolder;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-label {
+  font-weight: lighter;
+  color: var(--black);
+}
+
+.radio-label input {
+  margin: 2px;
+}
+
+.radio-label-text {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.form-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px;
+  width: 100%;
+  border-top: 2px solid lightgray;
+  border-right: 2px solid var(--gray);
+  border-left: 2px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+.primary-btn {
+  background-color: var(--black);
+  color: var(--white);
+  margin-right: 2px;
+}
+
+.primary-btn:hover {
+  background-color: var(--violetred);
+}
+
+.secondary-btn {
+  background-color: var(--white);
+  color: var(--black);
+  margin-left: 2px;
+}
+
+.secondary-btn:hover {
+  background-color: lightgray;
+}
+
+/* Footer Style */
+
+.footer-header {
+  padding: 2rem 0 0rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.footer-nav > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem 0;
 }
