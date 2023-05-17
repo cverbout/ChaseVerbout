@@ -52,6 +52,15 @@ form {
   width: 800px;
 }
 
+hr {
+  padding-top: 4rem;
+  border-top: none;
+  border-bottom: 2px solid black;
+  border-left: none;
+  border-right: none;
+  margin: 0 16rem;
+}
+
 /* Navbar Style */
 
 .navbar-container {
@@ -104,7 +113,7 @@ form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: url("images/moon2.jpg");
+  background: url("images/earth.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
@@ -113,7 +122,9 @@ form {
 .home_text {
   margin-left: 2rem;
   margin-bottom: 15%;
-  max-width: 700px;
+  background: rgba(0, 0, 0, 0.76);
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 .home_text > * {
@@ -142,7 +153,7 @@ form {
 
 /* Who Am I Style */
 
-.wai_section {
+.wai-section {
   display: flex;
   justify-content: space-around;
   background-image: url("images/topMtStHelens-2.jpg");
@@ -151,6 +162,22 @@ form {
   background-size: cover;
   align-items: center;
   justify-content: center;
+}
+
+.wai-container {
+  margin: 0 0 0 6rem;
+  background-color: #ffffff8a;
+  border-radius: 3rem;
+  padding: 2rem;
+}
+.wai-section > img {
+  margin: 0 4rem 0 0;
+}
+
+.wai-container > h2 {
+  margin-bottom: 2rem;
+}
+.wai-container > p {
 }
 
 /* Qualifications Style */
@@ -169,6 +196,7 @@ form {
 .qual-exp-section > * {
   margin: 0 16rem;
 }
+
 .qual-edu-section > h3,
 .qual-exp-section > h3 {
   padding-bottom: 1rem;
