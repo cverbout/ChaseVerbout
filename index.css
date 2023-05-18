@@ -318,7 +318,8 @@ hr {
   border-bottom: 1px solid var(--gray);
   border-radius: 5px;
   margin: 0 auto;
-  padding: 25px 10px;
+  padding: 4rem 10px;
+  margin-bottom: 2rem;
 }
 
 .signup-form h2,
@@ -406,6 +407,17 @@ hr {
 
 .secondary-btn:hover {
   background-color: lightgray;
+}
+
+.NASA {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8rem;
+}
+
+.NASA-text > h3 {
+  padding-bottom: 2rem;
 }
 
 /* Footer Style */
