@@ -35,3 +35,42 @@ const getImageData = async () => {
 };
 
 getImageData();
+
+document.addEventListener("DOMContentLoaded", function () {
+  let formOutput = {
+    fullname: null,
+    email: null,
+    message: null,
+  };
+
+  let form = document.querySelector(".signup-form");
+  console.log(form);
+  form.addEventListener("submit", (event) => {
+    formOutput.fullname = form.elements.fullname.value;
+    formOutput.email = form.elements.email.value;
+    formOutput.message = form.elements.message.value;
+
+    if (!validate(formOutput)) {
+      event.preventDefault();
+      alert("Please fill out all of the fields");
+    } else {
+      console.log("========= Form Submission =========");
+      console.log(`Full Name: ${formOutput.fullname}`);
+      console.log(`Email: ${formOutput.email}`);
+      console.log(`Message: ${formOutput.message}`);
+    }
+  });
+
+  function validate(formData) {
+    for (let item in formData) {
+      if (
+        formData[item] === "" ||
+        formData[item] === null ||
+        formData[item] === undefined
+      ) {
+        return false;
+      }
+    }
+    return true;
+  }
+});
