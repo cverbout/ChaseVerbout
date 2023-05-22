@@ -49,7 +49,7 @@ h4 {
 }
 
 form {
-  width: 800px;
+  max-width: 1000px;
 }
 
 hr {
@@ -101,10 +101,22 @@ hr {
 }
 
 .navbar-items > li > a {
-  padding: 20px;
+  padding: 1rem;
   display: block;
   text-decoration: none;
   color: var(--white);
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-items > div > img {
+    width: 0px;
+    height: 0px;
+    margin: 0rem;
+  }
+
+  .navbar-items > li > a {
+    padding: 0.5rem;
+  }
 }
 
 /* Landing Page Style */
@@ -121,6 +133,7 @@ hr {
 
 .home_text {
   margin-left: 2rem;
+  margin-right: 2rem;
   margin-bottom: 15%;
   background: rgba(0, 0, 0, 0.76);
   border-radius: 2rem;
@@ -177,7 +190,14 @@ hr {
 .wai-container > h2 {
   margin-bottom: 2rem;
 }
-.wai-container > p {
+
+@media screen and (max-width: 1200px) {
+  .wai-section {
+    flex-direction: column;
+  }
+  .wai-container {
+    margin: 4rem 6rem 0 6rem;
+  }
 }
 
 /* Qualifications Style */
@@ -250,6 +270,19 @@ hr {
   background-color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .qual-edu-section > *,
+  .qual-exp-section > * {
+    margin: 0 4rem;
+  }
+
+  .qual-section > h2 {
+    margin: 0 4rem;
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+  }
+}
+
 /* Projects Style */
 
 .proj-section {
@@ -276,6 +309,7 @@ hr {
 .proj-section > p,
 .proj-section > p {
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .proj-header {
@@ -299,11 +333,31 @@ hr {
   background-color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .proj-section > h2 {
+    margin: 0 4rem;
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .proj-section > *,
+  .proj-section > * {
+    margin: 0 4rem;
+  }
+
+  .proj-header {
+    flex-direction: column;
+  }
+}
+
 /* Contact Me Style */
 
 .contact-section {
   background-color: #53baff79;
   background: linear-gradient(180deg, #53baff79, white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-section > h2 {
@@ -317,9 +371,12 @@ hr {
   border-left: 2px solid var(--gray);
   border-bottom: 1px solid var(--gray);
   border-radius: 5px;
-  margin: 0 auto;
+
   padding: 4rem 10px;
-  margin-bottom: 2rem;
+  width: 90%;
+  margin: 0 4rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .signup-form h2,
@@ -333,17 +390,26 @@ hr {
 
 .subhead {
   color: var(--gray);
-  padding-bottom: 5px;
+  padding-bottom: 2rem;
 }
 
 .form-group input {
-  margin: 10px;
-}
-
-.form-group input {
-  width: 220px;
+  width: 420px;
+  height: 30px;
   border: 1px solid var(--gray);
   padding: 2px;
+  margin: 10px;
+  border-radius: 10rem;
+  padding: 12px 20px;
+}
+
+.signup-form textarea {
+  height: 70px;
+  border: 1px solid var(--gray);
+  padding: 2px;
+  margin: 10px;
+  border-radius: 10rem;
+  padding: 12px 20px;
 }
 
 .box-label,
@@ -356,21 +422,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-}
-
-.radio-label {
-  font-weight: lighter;
-  color: var(--black);
-}
-
-.radio-label input {
-  margin: 2px;
-}
-
-.radio-label-text {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  align-items: flex-start;
 }
 
 .form-btns {
@@ -412,12 +464,26 @@ hr {
 .NASA {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 8rem;
 }
 
 .NASA-text > h3 {
   padding-bottom: 2rem;
+}
+.NASA-text {
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .NASA {
+    flex-direction: column;
+  }
+
+  .NASA-text {
+    padding-bottom: 2rem;
+    padding-right: 0;
+  }
 }
 
 /* Footer Style */
@@ -433,6 +499,7 @@ hr {
 .footer-nav {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   list-style: none;
   padding: 2rem 0;
 }

@@ -27,8 +27,7 @@ const getImageData = async () => {
     let image = document.createElement("img");
     image.setAttribute("src", `${imageData.url}`);
     image.setAttribute("alt", `${imageData.title}`);
-    image.style.paddingLeft = "8rem";
-    image.style.width = "400px";
+    image.style.maxWidth = "400px";
     container.append(image);
   } catch (error) {
     console.log(error);
