@@ -178,11 +178,13 @@ hr {
 }
 
 .wai-container {
-  margin: 0 0 0 6rem;
-  background-color: #ffffff8a;
+  margin: 2rem 0 2rem 6rem;
+  background-color: #ffffffbe;
   border-radius: 3rem;
   padding: 2rem;
+  max-width: 1200px;
 }
+
 .wai-section > img {
   margin: 0 4rem 0 0;
 }
@@ -204,7 +206,7 @@ hr {
 
 .qual-section {
   /*background-color: #53baff;*/
-  background: linear-gradient(180deg, #53baff, #53baffbd);
+  background: linear-gradient(180deg, #548dde, #548edeb2);
 }
 
 .qual-section > h2 {
@@ -287,7 +289,7 @@ hr {
 
 .proj-section {
   background-color: #53baffbd;
-  background: linear-gradient(180deg, #53baffbd, #53baff79);
+  background: linear-gradient(180deg, #548edeb2, #548ede79);
   padding-bottom: 2rem;
 }
 
@@ -345,6 +347,10 @@ hr {
     margin: 0 4rem;
   }
 
+  .proj-section > hr {
+    margin: 0 16rem;
+  }
+
   .proj-header {
     flex-direction: column;
   }
@@ -353,16 +359,17 @@ hr {
 /* Contact Me Style */
 
 .contact-section {
-  background-color: #53baff79;
-  background: linear-gradient(180deg, #53baff79, white);
-  display: flex;
+  background: linear-gradient(180deg, #548ede79, white);
+  display: block;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-section > h2 {
-  margin: 0 8rem;
+  text-align: center;
   padding: 8rem 0 2rem 0;
+  display: block;
 }
 
 .signup-form {
@@ -374,7 +381,7 @@ hr {
 
   padding: 4rem 10px;
   width: 90%;
-  margin: 0 4rem 2rem 4rem;
+  margin: 0 auto 2rem auto;
   display: flex;
   flex-direction: column;
 }
