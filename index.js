@@ -40,7 +40,7 @@ getImageData();
 
 // Once everything has loaded in the DOM, run this function
 document.addEventListener("DOMContentLoaded", function () {
-  // Object to reprepsent form input
+  // Object to represent form input
   let formOutput = {
     fullname: null,
     email: null,

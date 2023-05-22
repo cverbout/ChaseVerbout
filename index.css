@@ -40,6 +40,7 @@ h2 {
 h3 {
   font-size: 2.5rem;
 }
+
 h4 {
   font-size: 1.5rem;
 }
@@ -410,8 +411,7 @@ hr {
   padding: 12px 20px;
 }
 
-.box-label,
-.radio-label-text {
+.box-label {
   color: var(--black);
   font-weight: bolder;
 }
