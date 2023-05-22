@@ -8,22 +8,18 @@
   --black: #080808;
   --white: #fefefe;
   --gray: #565656;
+  --lightgray: #c5c5c5;
+  --transparentwhite: #ffffffbe;
+  --transparentblack: #000000bf;
   --transparentblue: #090e388c;
   --lightblue: #39d4f0;
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --teal: #006060;
-  --violetred: #a2106d;
-  --orange: #ffa500;
-  --text: #81afdd;
-  --subtext: #ff8a71;
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-text3: linear-gradient(
-    90deg,
-    #ffffff 0%,
-    #ffb979 50%,
-    #fff514 100%
-  );
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+  --background1: #548dde;
+  --background2: #548edeb2;
+  --background3: #548ede79;
+  --background4: #fefefe;
+  --uw-gradient: linear-gradient(90deg, #4b2e83, #85754d, #b7a57a);
+  --psu: #154734;
 }
 
 body {
@@ -55,7 +51,7 @@ form {
 hr {
   padding-top: 4rem;
   border-top: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
   border-left: none;
   border-right: none;
   margin: 0 16rem;
@@ -75,7 +71,6 @@ hr {
   width: 100%;
   margin: 0px;
   padding: 0px;
-
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -86,21 +81,21 @@ hr {
   text-align: center;
 }
 
-.navbar-items > div > img {
+.logo-li > img {
   width: 64px;
   height: 64px;
   margin: 0rem 2rem;
 }
 
-.navbar-items > li:hover {
+.nav-li:hover {
   background-color: var(--lightblue);
 }
 
-.navbar-items > li:hover > a {
-  color: black;
+.nav-li:hover > a {
+  color: var(--black);
 }
 
-.navbar-items > li > a {
+.nav-li > a {
   padding: 1rem;
   display: block;
   text-decoration: none;
@@ -108,13 +103,15 @@ hr {
 }
 
 @media screen and (max-width: 1200px) {
-  .navbar-items > div > img {
+  .logo-li > img {
     width: 0px;
-    height: 0px;
-    margin: 0rem;
   }
 
-  .navbar-items > li > a {
+  .logo-li {
+    max-width: 0px;
+  }
+
+  .nav-li > a {
     padding: 0.5rem;
   }
 }
@@ -132,10 +129,8 @@ hr {
 }
 
 .home_text {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 15%;
-  background: rgba(0, 0, 0, 0.76);
+  margin: 0 2rem 15% 2rem;
+  background: var(--transparentblack);
   border-radius: 2rem;
   padding: 2rem;
 }
@@ -179,7 +174,7 @@ hr {
 
 .wai-container {
   margin: 2rem 0 2rem 6rem;
-  background-color: #ffffffbe;
+  background-color: var(--transparentwhite);
   border-radius: 3rem;
   padding: 2rem;
   max-width: 1200px;
@@ -205,8 +200,7 @@ hr {
 /* Qualifications Style */
 
 .qual-section {
-  /*background-color: #53baff;*/
-  background: linear-gradient(180deg, #548dde, #548edeb2);
+  background: linear-gradient(180deg, var(--background1), var(--background2));
 }
 
 .qual-section > h2 {
@@ -231,7 +225,7 @@ hr {
 }
 
 .qual-edu-psu {
-  background: #154734;
+  background: var(--psu);
   border-radius: 10px;
   padding: 1rem;
   margin-top: 1rem;
@@ -241,11 +235,11 @@ hr {
 .qual-edu-psu > h4,
 .qual-edu-uw > p,
 .qual-edu-uw > h4 {
-  color: white;
+  color: var(--white);
 }
 
 .qual-edu-uw {
-  background: linear-gradient(90deg, #4b2e83, #85754d, #b7a57a);
+  background: var(--uw-gradient);
   border-radius: 10px;
   padding: 1rem;
   margin-top: 1rem;
@@ -261,15 +255,15 @@ hr {
 .qual-res-btn > a {
   font-size: 1.5rem;
   padding: 0.5em 1em;
-  border: 0.1em solid black;
+  border: 0.1em solid var(--black);
   border-radius: 0.15em;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   cursor: pointer;
 }
 
 .qual-res-btn > a:hover {
-  background-color: white;
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 1200px) {
@@ -288,8 +282,7 @@ hr {
 /* Projects Style */
 
 .proj-section {
-  background-color: #53baffbd;
-  background: linear-gradient(180deg, #548edeb2, #548ede79);
+  background: linear-gradient(180deg, var(--background2), var(--background3));
   padding-bottom: 2rem;
 }
 
@@ -323,16 +316,16 @@ hr {
 .proj-header > a {
   font-size: 1.5rem;
   padding: 0.5em 1em;
-  border: 0.1em solid black;
+  border: 0.1em solid var(--black);
   border-radius: 0.15em;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   cursor: pointer;
   height: fit-content;
 }
 
 .proj-header > a:hover {
-  background-color: white;
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 1200px) {
@@ -359,7 +352,7 @@ hr {
 /* Contact Me Style */
 
 .contact-section {
-  background: linear-gradient(180deg, #548ede79, white);
+  background: linear-gradient(180deg, var(--background3), var(--background4));
   display: block;
   flex-direction: column;
   align-items: center;
@@ -378,7 +371,6 @@ hr {
   border-left: 2px solid var(--gray);
   border-bottom: 1px solid var(--gray);
   border-radius: 5px;
-
   padding: 4rem 10px;
   width: 90%;
   margin: 0 auto 2rem auto;
@@ -404,7 +396,6 @@ hr {
   width: 420px;
   height: 30px;
   border: 1px solid var(--gray);
-  padding: 2px;
   margin: 10px;
   border-radius: 10rem;
   padding: 12px 20px;
@@ -442,7 +433,7 @@ hr {
 .btn {
   padding: 10px;
   width: 100%;
-  border-top: 2px solid lightgray;
+  border-top: 2px solid var(--gray);
   border-right: 2px solid var(--gray);
   border-left: 2px solid var(--gray);
   border-bottom: 1px solid var(--gray);
@@ -455,7 +446,7 @@ hr {
 }
 
 .primary-btn:hover {
-  background-color: var(--violetred);
+  background-color: var(--lightblue);
 }
 
 .secondary-btn {
@@ -465,7 +456,7 @@ hr {
 }
 
 .secondary-btn:hover {
-  background-color: lightgray;
+  background-color: var(--lightgray);
 }
 
 .NASA {
@@ -478,6 +469,7 @@ hr {
 .NASA-text > h3 {
   padding-bottom: 2rem;
 }
+
 .NASA-text {
   padding-right: 2rem;
 }
