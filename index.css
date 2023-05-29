@@ -11,8 +11,8 @@
   --lightgray: #c5c5c5;
   --transparentwhite: #ffffffbe;
   --transparentblack: #000000bf;
-  --transparentblue: #090e388c;
-  --lightblue: #39d4f0;
+  --transparentblue: #090e38e1;
+  --lightblue: #f49867;
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --background1: #548dde;
   --background2: #548edeb2;
@@ -447,6 +447,7 @@ hr {
 
 .primary-btn:hover {
   background-color: var(--lightblue);
+  color: var(--black);
 }
 
 .secondary-btn {
