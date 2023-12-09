@@ -1,13 +1,33 @@
-# Welcome - My name is Chase V
-### ***This is my professional webpage***
-Click here to see it hosted: https://cverbout.github.io/ChaseVerbout/
-## Running the Code
-1. Clone this directory into your own repository and host it on your own github.io
-2. Clone this directory locally and host it on a local port
-3. Clone this directory and use a live server supported by your editor (live server on VS code works well)
+# Personal Webpage Project
 
-## Outside Sources
-1. Landing page: https://unsplash.com/
-2. NASA API (APOD): https://api.nasa.gov/
-3. CSS reference: https://developer.mozilla.org/en-US/docs/Web/CSS
-4. Web APIs reference: https://developer.mozilla.org/en-US/docs/Web/API
+## Overview
+This personal webpage project is a showcase of frontend development skills, integrating HTML, CSS, and JavaScript. The webpage features dynamic content powered by an external API, specifically NASA's Photo API, offering a unique and engaging user experience.
+
+## Frontend Details
+
+### HTML (`index.html`)
+- Provides the structural foundation of the personal webpage.
+- Includes links to the CSS file for styling and the JavaScript file for interactive features.
+- The layout includes a header, a navigation bar, and sections for displaying dynamic content.
+
+### CSS (`index.css`)
+- Defines the visual style of the webpage.
+- Utilizes CSS variables for a cohesive color scheme, enhancing maintainability and style consistency.
+- Responsive design ensures optimal viewing on various devices and screen sizes.
+- Styling for navigation bars, headers, and content sections focuses on a user-friendly interface.
+
+### JavaScript (`index.js`)
+- Adds interactivity and dynamic content to the webpage.
+- Features an API call to NASA's Photo API, showcasing the ability to fetch and display external data.
+- Implements asynchronous operations for seamless data fetching and display.
+- Includes error handling to address potential issues during API interactions.
+
+## Key Features
+- Responsive design for a seamless experience across different devices.
+- Integration with NASA's Photo API for dynamic, real-time content.
+- A clean, intuitive user interface that makes navigation effortless.
+
+## Setup and Usage
+1. Clone or download the repository.
+2. Open `index.html` in a web browser to experience the personal webpage.
+
