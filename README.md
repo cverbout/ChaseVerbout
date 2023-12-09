@@ -1,6 +1,7 @@
 # Personal Webpage Project
 
-## Check it out: https://cverbout.github.io/ChaseVerbout/
+## Check It Out
+https://cverbout.github.io/ChaseVerbout/
 
 ## Overview
 This personal webpage project is a showcase of frontend development skills, integrating HTML, CSS, and JavaScript. The webpage features dynamic content powered by an external API, specifically NASA's Photo API, offering a unique and engaging user experience.
