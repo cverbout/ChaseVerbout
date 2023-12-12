@@ -20,6 +20,8 @@
   --background4: #fefefe;
   --uw-gradient: linear-gradient(90deg, #4b2e83, #85754d, #b7a57a);
   --psu: #154734;
+  --nasa: linear-gradient(90deg, #0b3d91, #0b3d91, #fc3d21);
+  --kcm: linear-gradient(90deg, #207fb6, #119754, #fff01f);
 }
 
 body {
@@ -174,7 +176,7 @@ hr {
 }
 
 .wai-container {
-  margin: 2rem 0 2rem 6rem;
+  margin: 10rem 0 8rem 6rem;
   background-color: var(--transparentwhite);
   border-radius: 3rem;
   padding: 2rem;
@@ -221,8 +223,34 @@ hr {
 }
 
 .qual-edu-section > p,
-.qual-exp-section > p {
+.qual-exp-section > ul {
   padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.qual-exp-section > li {
+  padding-top: 1rem;
+  list-style: none;
+}
+
+.qual-sec-nasa,
+.qual-sec-tcss,
+.qual-sec-kcm {
+  background: var(--psu);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.qual-sec-nasa {
+  background: var(--nasa);
+}
+.qual-sec-tcss {
+  background: var(--psu);
+}
+.qual-sec-kcm {
+  background: var(--kcm);
 }
 
 .qual-edu-psu {
@@ -308,10 +336,112 @@ hr {
   padding-top: 1rem;
 }
 
+.proj-section > ul > li {
+  list-style: none;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.proj-section > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
 .proj-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  color: var(--white);
+}
+
+#aim > a:hover,
+#rob > a:hover,
+#c > a:hover,
+#back > a:hover,
+#gd > a:hover,
+#front > a:hover {
+  background-color: wheat;
+}
+
+#aim > a,
+#rob > a,
+#c > a,
+#back > a,
+#gd > a,
+#front > a {
+  background-color: wheat;
+  border-radius: 2rem;
+}
+
+#aim2,
+#aim > a {
+  background-color: #1df086;
+  border-color: white;
+}
+
+#aim {
+  background-color: #13ac5f;
+}
+
+#rob2,
+#rob > a {
+  background-color: #ff6060;
+  border-color: white;
+}
+
+#rob {
+  background-color: #a34848;
+}
+
+#back2,
+#back > a {
+  background-color: #60ffd7;
+  border-color: white;
+}
+
+#back {
+  background-color: #48a397;
+}
+
+#gd2,
+#gd > a {
+  background-color: #8a60ff;
+  border-color: white;
+}
+
+#gd {
+  background-color: #7248a3;
+}
+
+#front2,
+#front > a {
+  background-color: #efff60;
+  border-color: white;
+}
+
+#front {
+  background-color: #a1a05a;
+}
+
+#c2,
+#c > a {
+  background-color: #6092ff;
+  border-color: white;
+}
+
+#c {
+  background-color: #486fa3;
 }
 
 .proj-header > a {
